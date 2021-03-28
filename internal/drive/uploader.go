@@ -31,7 +31,7 @@ func UploadFile(driveId, filePath string, currentTime *time.Time) {
 
 	f, err := os.Open(filePath)
 	if err != nil {
-		log.Fatalln("Failed to open file test.txt")
+		log.Fatalf("Failed to open file '%s' due to: %v\n", filePath, err)
 	}
 
 	fileService := drive.NewFilesService(service)
