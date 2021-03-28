@@ -1,3 +1,7 @@
 service-account.json
 backups/
 key.sec
+cron-output
+./main
+run.sh
+
